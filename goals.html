@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="extra-curricular.html">Extra Curricular</a></li>
+                    <li><a href="skills.html">Hobbies</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="allcontainer">
+        <div class="aboutmecontainer">
+            <h1 id="aboutme">Goals</h1>
+            <div class="icons">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqsDJBLVfVWvVpBCWtXsKBNvFwdCRrNPhXLZNXgvjczcdnWnzLzPKnQmVXbVQmPprsqV">
+                    <img src="icons/gmail.png" alt="gmail" id="gmail">
+                </a>
+                <a href="https://www.instagram.com/jonathan_labs/">
+                    <img src="icons/insta.png" alt="gmail" id="insta">
+                </a>
+                <a href="https://www.facebook.com/jonathanababatlabistejr">
+                    <img src="icons/fb.png" alt="gmail" id="fb">
+                </a>
+            </div>
+        </div>
+        <div class="goalcontainer2">
+            <div class="goal1">
+                <div class="goalpicdiv">
+                    <div class="goalpicdiv2">
+                        <img src="goals/1.jpg" alt="Mr. Labiste" id="picss1" class="allpics">
+                        <img src="goals/2.jpg" alt="Mr. Labiste" id="picss2" class="allpics">
+                    </div>
+                    <div class="goalpicdiv3">
+                        <img src="goals/3.jpg" alt="Mr. Labiste" id="picss3" class="allpics">
+                        <img src="goals/4.jpg" alt="Mr. Labiste" id="picss4" class="allpics">
+                    </div>
+                </div>
+                <div class="goaldescription">
+                        <h1>I.T. Professional</h1>
+                        <p>In the future, I want to be an IT professional, working with technology to solve problems and improve systems. I am excited about the idea of working with computers, software, and networks to make things run smoothly. As technology continues to evolve, I believe there will be many opportunities to grow and learn in this field. I look forward to helping organizations optimize their operations and providing solutions to tech-related challenges. Ultimately, I want to make a positive impact by using my skills to support businesses and individuals in their use of technology.</p>
+                </div>
+            </div>
+            <div class="goal2">
+                <div class="goalpicdiv">
+                    <div class="goalpicdiv2">
+                        <img src="goals/5.jpg" alt="Mr. Labiste" id="picss1" class="allpics">
+                        <img src="goals/6.jpg" alt="Mr. Labiste" id="picss2" class="allpics">
+                    </div>
+                    <div class="goalpicdiv3">
+                        <img src="goals/7.jpg" alt="Mr. Labiste" id="picss3" class="allpics">
+                        <img src="goals/8.jpg" alt="Mr. Labiste" id="picss4" class="allpics">
+                    </div>
+                </div>
+                <div class="goaldescription">
+                    <h1>Become Rich</h1>
+                    <p>It’s safe to say that almost everyone dreams of becoming rich, and I’m no exception. Like many others, I aspire to achieve financial success and security in the future. The idea of having enough wealth to enjoy a comfortable lifestyle and pursue my passions motivates me every day. While wealth isn’t the only thing that matters, I believe that financial stability can open doors to new opportunities and a better quality of life. Ultimately, I aim to use my success to help others and make a positive impact.</p>
+                </div>
+            </div>
+            <div class="goal3">
+                <div class="goalpicdiv">
+                    <div class="goalpicdiv2">
+                        <img src="goals/1.png" alt="Mr. Labiste" id="picss1" class="allpics">
+                        <img src="goals/9.jpg" alt="Mr. Labiste" id="picss2" class="allpics">
+                    </div>
+                    <div class="goalpicdiv3">
+                        <img src="goals/10.jpg" alt="Mr. Labiste" id="picss3" class="allpics">
+                        <img src="goals/11.jpg" alt="Mr. Labiste" id="picss4" class="allpics">
+                    </div>
+                </div>
+                <div class="goaldescription">
+                    <h1>Travel the World</h1>
+                    <p>Someday, I want to travel the world and experience its beauty firsthand. I dream of visiting famous landmarks like the Great Pyramid of Giza, the Eiffel Tower, and the Leaning Tower of Pisa, just to name a few. It would be amazing to explore different cultures, try new foods, and learn about the history behind these incredible sites. Traveling would not only satisfy my curiosity, but also give me unforgettable memories. I hope to make this dream a reality and see as much of the world as possible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portfolio by Labiste, Jonathan Jr. BSIT 2A</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            const hamburger = document.querySelector('.hamburger');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

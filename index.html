@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="extra-curricular.html">Extra Curricular</a></li>
+                    <li><a href="skills.html">Hobbies</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="indexcontainer">
+        <img src="me.jpg" alt="Mr. Labiste" id="pic">
+        <h1 id="hi">Hi, I'm Jonathan!</h1>
+        <p id="thi_is">This is my portfolio for the subject Websytem and Technology.</p>
+    </div>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portfolio by Labiste, Jonathan Jr. BSIT 2A</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            const hamburger = document.querySelector('.hamburger');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
+<script>
+    const textArray = [
+        "Welcome to my website!",
+        "Welcome to my website!.",
+        "Welcome to my website!..",
+        "Welcome to my website!...",
+        "Portfolio for Web Sytems and Technologies",
+        "Portfolio for Web Sytems and Technologies.",
+        "Portfolio for Web Sytems and Technologies..",
+        "Portfolio for Web Sytems and Technologies...",
+        "Enjoy your stay!",
+        "Enjoy your stay!.",
+        "Enjoy your stay!..",
+        "Enjoy your stay!...",
+        "My favorite color is Purple and Cyan! If it's not already obvios",
+        "My favorite color is Purple and Cyan! If it's not already obvios.",
+        "My favorite color is Purple and Cyan! If it's not already obvios..",
+        "My favorite color is Purple and Cyan! If it's not already obvios...",
+        "A little kindness will go a long way",
+        "A little kindness will go a long way.",
+        "A little kindness will go a long way..",
+        "A little kindness will go a long way...",
+    ];
+
+    let currentIndex = 0; 
+
+    const textElement = document.getElementById('thi_is');
+
+    function changeText() {
+        textElement.textContent = textArray[currentIndex];
+        currentIndex = (currentIndex + 1) % textArray.length;
+    }
+
+    changeText();
+
+    setInterval(changeText, 1000);
+</script>
+
+</body>
+</html>
